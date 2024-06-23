@@ -38,15 +38,13 @@ public class PhotosController : ControllerBase
 
     var filePath = Path.Combine("uploads", file.FileName);
 
-    // Создаем директорию, если она не существует
-    Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+    Directory.CreateDirectory(Path.GetDirectoryName(filePath)!);
 
     using (var stream = new FileStream(filePath, FileMode.Create))
     {
       await file.CopyToAsync(stream);
     }
 
-    // Возвращаем путь к загруженному файлу
     return Ok(new { FilePath = filePath });
   }
 }
