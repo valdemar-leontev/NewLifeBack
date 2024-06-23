@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  postgres_new_life:
+    image: postgres:13.3
+    environment:
+      POSTGRES_DB: "new_life"
+      POSTGRES_USER: "vladimir_leontev"
+      POSTGRES_PASSWORD: "hbuwedi8#1!du723481d"
+    volumes:
+      - .:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"

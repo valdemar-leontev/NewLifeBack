@@ -1,0 +1,90 @@
+# .NET
+*.obj
+*.bin
+*.exe
+*.dll
+*.pdb
+*.user
+*.vscode
+*.vs
+*.suo
+*.cache
+*.log
+*.bak
+*.DS_Store
+
+# Visual Studio files
+.vs/
+.vscode/
+*.sln
+*.csproj.user
+*.vcxproj
+*.vcxproj.filters
+*.xcodeproj
+
+# NuGet Packages
+*.nupkg
+*.paket.restore.log
+packages/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio code coverage results
+*.coverage
+*.coveragexml
+
+# Entity Framework
+Model/
+_Models/
+_ModelConfig/
+*_modelbuilder.cs
+
+# Rider
+.idea/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Test binary
+[Dd]ebug/
+[Rr]elease/
+[Tt]est[Rr]esult*/
+
+# Resharper added files
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Rider added files
+.idea/
+
+# Roslyn
+*.ide
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Rider files
+.idea/
+
+Migrations
