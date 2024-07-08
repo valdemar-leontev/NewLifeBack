@@ -1,5 +1,6 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using NewLifeApi.Commands.EventRegistrations;
 
 namespace NewLifeApi.Controllers;
 

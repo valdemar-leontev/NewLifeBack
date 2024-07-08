@@ -1,6 +1,6 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using NewLifeApi.Queries;
+using NewLifeApi.Queries.Files;
 
 namespace NewLifeApi.Controllers;
 
