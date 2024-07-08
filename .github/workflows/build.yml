@@ -20,8 +20,8 @@ jobs:
         dotnet-version: '8.0'
 
     - name: Restore dependencies
-      run: dotnet restore ./NewLifeApi/NewLifeApi.csproj
+      run: dotnet restore ./NewLife.Api/NewLife.Api.csproj
 
     - name: Build
-      run: dotnet build ./NewLifeApi/NewLifeApi.csproj --configuration Release --no-restore
+      run: dotnet build ./NewLife.Api/NewLife.Api.csproj --configuration Release --no-restore
 
