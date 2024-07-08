@@ -16,7 +16,6 @@
 # Visual Studio files
 .vs/
 .vscode/
-*.sln
 *.csproj.user
 *.vcxproj
 *.vcxproj.filters
