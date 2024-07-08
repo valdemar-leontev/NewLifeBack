@@ -6,5 +6,5 @@ public class EventRegistrationDataModel : EventRegistrationModel, IEntity
 
   public DateTimeOffset CreationDate { get; set; } = DateTimeOffset.UtcNow;
 
-  public EventDataModel Event { get; set; }
+  public EventDataModel? Event { get; set; }
 }
