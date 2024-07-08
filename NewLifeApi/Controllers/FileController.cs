@@ -4,21 +4,14 @@ using NewLifeApi.Queries;
 
 namespace NewLifeApi.Controllers;
 
-[Route("api/[controller]")]
-[ApiController]
-public class PhotosController : ControllerBase
+public class FileController : BaseController
 {
-  private readonly IMediator _mediator;
-
-  public PhotosController(IMediator mediator)
-  {
-    _mediator = mediator;
-  }
+  public FileController(IMediator mediator) : base(mediator) { }
 
   [HttpGet("{id}")]
-  public async Task<IActionResult> GetPhotoById(int id)
+  public async Task<IActionResult> GetFileById(int id)
   {
-    var imageBytes = await _mediator.Send(new GetPhotoByIdQuery(id));
+    var imageBytes = await _mediator.Send(new GetFileByIdQuery(id));
 
     if (imageBytes == null)
     {
@@ -29,7 +22,7 @@ public class PhotosController : ControllerBase
   }
 
   [HttpPost("upload")]
-  public async Task<IActionResult> UploadPhoto([FromForm] IFormFile file)
+  public async Task<IActionResult> UploadFile([FromForm] IFormFile file)
   {
     if (file == null || file.Length == 0)
     {

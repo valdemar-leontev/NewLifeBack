@@ -7,6 +7,14 @@ services:
       POSTGRES_USER: "vladimir_leontev"
       POSTGRES_PASSWORD: "hbuwedi8#1!du723481d"
     volumes:
-      - .:/docker-entrypoint-initdb.d
+      - postgres_new_life_volume:/var/lib/postgresql/data
     ports:
       - "5432:5432"
+
+volumes:
+  postgres_new_life_volume:
+    driver: local
+    driver_opts:
+      type: none
+      device: ./.data
+      o: bind

@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NewLifeDataAccess\NewLifeDataAccess.csproj" />
+    <ProjectReference Include="..\NewLifeBusinessLogic\NewLifeBusinessLogic.csproj" />
   </ItemGroup>
 
 </Project>
